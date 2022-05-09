@@ -1,4 +1,4 @@
-# libraf
+# librafpp
 
 This is a C++ library to print raf to the terminal based on 190n's [libraf](https://github.com/190n/libraf).
 
