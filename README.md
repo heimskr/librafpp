@@ -29,7 +29,7 @@ Returns whether the operation succeeded. If it didn't, `errno` will be set.
 ## Compiling
 
 Running `make` or `make all` will build everything. There are also individual targets to build
-`libraf.so`/`libraf.dylib`, `raf.pc`, `raf_test`, and `raf_test_shared`.
+`libraf.so`/`libraf.dylib`, `rafpp.pc`, `raf_test` and `raf_test_shared`.
 
 ## Installation
 
