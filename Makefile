@@ -30,9 +30,8 @@ install: $(LIBRARY) rafpp.pc raf.hpp
 	install -m 644 raf.hpp $(PREFIX)/include/raf.hpp
 	install -Dm 644 LICENSE $(PREFIX)/share/licenses/librafpp/LICENSE
 
-test: raf_test raf_test_shared
+test: raf_test
 	./raf_test
-	./raf_test_shared
 
 uninstall:
 	rm -f $(PREFIX)/lib/$(LIBRARY) $(PREFIX)/lib/pkgconfig/rafpp.pc $(PREFIX)/include/raf.h
@@ -46,4 +45,4 @@ clean:
 format:
 	clang-format -i -style=file *.[ch]
 
-.PHONY: all clean test_shared format install uninstall
+.PHONY: all clean test test_shared format install uninstall
