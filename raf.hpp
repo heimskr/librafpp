@@ -5,6 +5,7 @@ namespace Raf {
 	struct Raf {
 		bool trueColor;
 		Raf(bool true_color = true): trueColor(true_color) {}
+		operator std::string_view() const;
 	};
 
 	void raf(bool true_color = true);

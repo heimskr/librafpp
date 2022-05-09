@@ -221,6 +221,10 @@ namespace Raf {
 		"237m▄\x1b[0m\n"
 	};
 
+	Raf::operator std::string_view() const {
+		return trueColor? raf_true_color : raf_ansi;
+	}
+
 	void raf(bool true_color) {
 		std::cout << (true_color? raf_true_color : raf_ansi);
 	}
