@@ -30,6 +30,10 @@ install: $(LIBRARY) rafpp.pc raf.hpp
 	install -m 644 raf.hpp $(PREFIX)/include/raf.hpp
 	install -Dm 644 LICENSE $(PREFIX)/share/licenses/librafpp/LICENSE
 
+test: raf_test raf_test_shared
+	./raf_test
+	./raf_test_shared
+
 uninstall:
 	rm -f $(PREFIX)/lib/$(LIBRARY) $(PREFIX)/lib/pkgconfig/rafpp.pc $(PREFIX)/include/raf.h
 
